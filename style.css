@@ -1,0 +1,108 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background-color: #f4f4f9; /* Светлый фон */
+}
+
+header {
+    background-color: #4CAF50;
+    color: white;
+    text-align: center; 
+    padding: 1em 0;
+}
+
+nav {
+    background-color: #333;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav ul li a {
+    color: white;
+    padding: 14px 20px;
+    text-decoration: none;
+    display: inline-block;
+}
+
+nav ul li a:hover {
+    background-color: #575757;
+}
+
+main {
+    padding: 20px;
+    flex: 1;
+    text-align: center;
+}
+
+.orders {
+    margin: 20px 0;
+}
+
+.projects-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.project {
+    border: 2px solid #4CAF50;
+    padding: 10px;
+    background-color: #f9f9f9;
+    margin: 10px;
+    width: calc(25% - 20px);
+    box-sizing: border-box;
+    border-radius: 10px;
+    transition: box-shadow 0.3s;
+}
+
+.project:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+#full-list {
+    display: none;
+    margin-top: 20px;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    width: 100%;
+}
+
+.show-more-container {
+    display: flex;          /* Flexbox для расположения в ряд */
+    justify-content: center; /* Выравнивание по центру */
+    margin-top: 20px; 
+}
+
+.show-more {
+    cursor: pointer;
+    color: #4CAF50;
+    font-weight: bold;
+    text-decoration: underline;
+    margin-right: 20px; /* Отступ между элементами */
+}
+
+.show-more:hover {
+    color: #3e8e41;
+}
+
+a {
+    text-decoration: none;
+    color: #3e8e41;
+}
